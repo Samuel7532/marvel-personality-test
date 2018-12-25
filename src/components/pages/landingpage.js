@@ -1,6 +1,6 @@
 import React from "react";
 
-function header() {
+function landingpage() {
   return (
     <div class="demo-cont">
  
@@ -22,8 +22,8 @@ function header() {
               </div>
             </h2>
             <button type="button" class="fnc-slide__action-btn">
-              Credits
-              <span data-text="Credits">Credits</span>
+              Enter
+              <span data-text="Enter">Enter</span>
             </button>
           </div>
         </div>
@@ -44,8 +44,8 @@ function header() {
               </div>
             </h2>
             <button type="button" class="fnc-slide__action-btn">
-              Credits
-              <span data-text="Credits">Credits</span>
+              Enter
+              <span data-text="Enter">Enter</span>
             </button>
           </div>
         </div>
@@ -65,8 +65,8 @@ function header() {
                 <span>Strange</span>
               </div>
               <button type="button" class="fnc-slide__action-btn">
-              Credits
-              <span data-text="Credits">Credits</span>
+              Enter
+              <span data-text="Enter">Enter</span>
             </button>
             </h2>
           </div>
@@ -87,8 +87,8 @@ function header() {
                 <span>Thor</span>
               </div>
               <button type="button" class="fnc-slide__action-btn">
-              Credits
-              <span data-text="Credits">Credits</span>
+              Enter
+              <span data-text="Enter">Enter</span>
             </button>
             </h2>
           </div>
@@ -109,8 +109,8 @@ function header() {
                 <span>Spiderman</span>
               </div>
               <button type="button" class="fnc-slide__action-btn">
-              Credits
-              <span data-text="Credits">Credits</span>
+              Enter
+              <span data-text="Enter">Enter</span>
             </button>
             </h2>
           </div>
@@ -154,6 +154,10 @@ function header() {
   <div class="demo-cont__credits">
     <div class="demo-cont__credits-close"></div>
     <h2 class="demo-cont__credits-heading">Login</h2>
+    <ul>
+    <a href="/heropage">Enter</a>
+    </ul>
+    
    
    
    
@@ -187,4 +191,4 @@ function header() {
 
 
 
-export default header;
+export default landingpage;
