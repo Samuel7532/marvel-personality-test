@@ -20,10 +20,10 @@ function heropage() {
           My Hero
         </div>
         <div className="italic" onmouseover="highlight(this, event)">
-          play
+          Personalities
         </div>
         <div className="italic" onmouseover="highlight(this, event)">
-          training
+          About
         </div>
         {/* <div className="italic" onmouseover="highlight(this, event)">
           hero gallery
@@ -65,9 +65,9 @@ function heropage() {
       </div> */}
     </div>
     <div id="hero">
-      <div id="hero-name">TRACER</div>
+      <div id="hero-name">Hero Name Here</div>
       <div id="hero-unlocks">
-        <span>74</span>/76 UNLOCKS
+        <span></span>Personality type
       </div>
     </div>
   </div>

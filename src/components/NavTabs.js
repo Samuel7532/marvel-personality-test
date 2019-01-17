@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 function NavTabs() {
   return (
     <nav class="navbar navbar-expand-lg navbar-dark">
-  <a class="navbar-brand" href="#">Clicky Game</a>
+  <a class="navbar-brand" href="#"></a>
   <div class="collapse navbar-collapse" id="navbarText">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
@@ -18,11 +18,11 @@ function NavTabs() {
       </li>
     </ul>
     <span class="navbar-text">
-      Score: 0 || Best: 0 
+      
     </span>
   </div>
 </nav>
   );
 }
 
-export default NavTabs;
+// export default NavTabs;

@@ -392,4 +392,69 @@ document.body.onkeydown = function(event){
 
 document.body.focus();
 
+
+
+
+
+
+
+
+
+var app = new React({
+  el: '#app',
+  
+  data: {
+    posts: {},
+    character: "Thor",
+    loadInfo: false,
+    notFound: false,
+    isInfo: false,
+    noDesc: false
+  },
+  
+  methods: {
+    callAPI(){
+      this.isInfo = false;
+      axios.get(`https://gateway.marvel.com/v1/public/characters`,{
+        params: {
+          apikey: "96592ec9dedd9fb3f54343039b31caf7",
+          ts: "1",
+          hash: "276c7f01e16983415ba25c07b494a281989593fa",
+          name: this.character
+        }
+      })
+      .then(response => {
+        if(response.data.data.total == 0) {
+          
+          this.notFound = true
+          setTimeout(()=>{ 
+            this.notFound = false 
+          }, 2000);
+          
+        } else {
+          
+          if (response.data.data.results[0].description == '') {
+            this.noDesc = true
+          } else {
+            this.noDesc = false
+          }
+          
+          this.posts = response.data
+          this.loadInfo = true
+          
+        }
+      })
+      .catch(e => {
+        this.errors.push(e)
+      })
+    }
+  },
+  
+  mounted(){
+    this.callAPI();
+  }
+})
+
+React.config.devtools = false
+
 </script>
